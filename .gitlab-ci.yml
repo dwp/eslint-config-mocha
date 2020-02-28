@@ -132,10 +132,11 @@ unit:
 
 sonar-scanner:
   stage: quality-tests
-  <<: *executor-docker
+  tags:
+    - transparent
   image: $CI_REGISTRY/engineering-practice/sonar-scanner:latest
   <<: *dependency-unit
   script:
     - sed -i.bak -e "s|^SF:\(.*/[[:digit:]]\{1,\}/.*/\)|SF:$( pwd )/|g" .coverage/unit/lcov.info
-    - sonar-scanner
+    - sonar-scanner -Dsonar.projectBaseDir=$CI_PROJECT_DIR
   <<: *not-branches
