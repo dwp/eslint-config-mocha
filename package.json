@@ -52,10 +52,10 @@
     "@dwp/nyc-config-base": "1.0.0",
     "chai": "4.2.0",
     "eslint": "6.8.0",
-    "husky": "4.2.1",
-    "lint-staged": "10.0.4",
-    "mocha": "7.0.1",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.8",
+    "mocha": "7.1.0",
     "nyc": "15.0.0",
-    "snyk": "1.286.1"
+    "snyk": "1.297.2"
   }
 }
