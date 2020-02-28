@@ -103,7 +103,8 @@ audit:
 
 checkmarx:
   stage: security-tests
-  <<: *executor-docker
+  tags:
+    - transparent
   <<: *checkmarx-image
   <<: *checkmarx-script
   <<: *not-branches
