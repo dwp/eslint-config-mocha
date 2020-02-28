@@ -3,7 +3,7 @@
     - docker
 
 .node-image: &node-image
-  image: node:10.14.1-alpine@sha256:35fcf0a48f57bef4bafa0f844f62edb659d036364a1d086995efe5b43ca0c4af
+  image: node:12.16.1-alpine@sha256:08f387b98dd00c1a746580dbd91e538d534911cdd14f6d1d0b36b4687e823006
 
 .checkmarx-image: &checkmarx-image
   image: $CI_REGISTRY/engineering-practice/checkmarx-cli:latest
