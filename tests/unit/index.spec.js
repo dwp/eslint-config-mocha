@@ -31,15 +31,13 @@ describe('@dwp/eslint-config-mocha', () => {
     });
 
     describe('the extends key should ', () => {
-      const rule = eslintConfig.extends;
-
       it('inherit recommended settings', () => {
-        expect(rule).to.deep.equal(['plugin:eslint-plugin-mocha/recommended']);
+        expect(eslintConfig.extends).to.deep.equal(['plugin:eslint-plugin-mocha/recommended']);
       });
     });
 
     describe('the env key should', () => {
-      const rule = eslintConfig.env;
+      const { env: rule } = eslintConfig;
 
       it('be an object', () => {
         expect(rule).to.be.an('Object');
