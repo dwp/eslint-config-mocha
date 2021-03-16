@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See https://www.conventionalcommits.org/en/v1.0.0/ for commit guidelines.
 
+# [1.2.1](https://github.com/dwp/eslint-config-mocha/compare/1.2.0...1.2.1) (2021-03-16)
+
+### Fixes
+
+* disable rules inadvertently added in previous release that break from current convention
+
+
+
 # [1.2.0](https://github.com/dwp/eslint-config-mocha/compare/1.1.0...1.2.0) (2021-03-01)
 
 ### Features
